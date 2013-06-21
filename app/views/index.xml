@@ -1,0 +1,34 @@
+<Alloy>
+	<TabGroup>
+		<Tab title="Find" icon="images/Badge/search.png">
+			<Window title="Tab 1">
+				<View id='mainView' class="main">
+					<Label>I am Window 1</Label>
+					<View id='header' class="headerView">
+						<View id="toolBar" class="toolbarView">
+							<Button id="btnCustomer" class="leftTBbtn" left=0 top=0 width = Ti.UI.SIZE height = Ti.UI.SIZE>Customer</Button>
+							<Button id="btnServiceOrderNo" class="middleTBbtn">Service Order #</Button>
+							<Button id="btnSerialNo" class="middleTBbtn">Serial Number</Button>
+							<Button id="btnOtherOpt" class="middleTBbtn">Other Option</Button>
+						</View>
+					</View>
+				</View>
+			</Window>
+		</Tab>
+		<Tab title="Hierarchy" icon="images/Badge/hierarchy.png">
+			<Window title="Tab 2">
+				<Label>I am Window 2</Label>
+			</Window>
+		</Tab>
+		<Tab title="Header" icon="images/Badge/header.png">
+			<Window title="Tab 3">
+				<Label>I am Window 3</Label>
+			</Window>
+		</Tab>
+		<Tab title="Settings" icon="images/Badge/setting.png">
+			<Window title="Tab 4">
+				<Label>I am Window 4</Label>
+			</Window>
+		</Tab>
+	</TabGroup>
+</Alloy>

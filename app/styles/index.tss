@@ -1,0 +1,56 @@
+"Window": {
+	backgroundColor: "#fff"
+},
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	font: {
+		fontSize: 20,
+		fontFamily: 'Helvetica Neue'
+	},
+	textAlign: 'center'
+},
+'.headerView': {
+	left: 0,
+	top: 0,
+	width: Ti.UI.FILL,
+	backgroundColor: 'gray',
+	borderColor: 'black',
+	borderRadius: '5px'
+},
+'.toolbarView': 
+{
+	top: 5,
+	height: '5dp',
+	backgroundColor: 'white',
+	borderColor: 'black',
+	borderRadius: '5px'
+},
+
+'.main':
+{
+	left: 0,
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+},
+
+'.leftTBbtn': {
+	backgroundImage: 'images/Button/Button_NavBar_Left_Selected@1x.png',
+	height: Ti.UI.FILL,
+	font:{fontSize: 14}
+	//backgroundSelectedImage: 'images/Button/Button_NavBar_Left_Selected@1x.png'
+}
+
+'.middleTBbtn': {
+	backgroundImage: 'images/Button/Button_NavBar_Middle_Selected@1x.png',
+	height: Ti.UI.FILL,
+	font:{fontSize: 14}
+}
+
+'.rightTBbtn': {
+	backgroundImage: 'images/Button/Button_NavBar_Right_Selected@1x.png',
+	height: Ti.UI.FILL,
+	font:{fontSize: 14}
+}
