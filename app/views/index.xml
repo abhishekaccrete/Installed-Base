@@ -1,16 +1,20 @@
 <Alloy>
 	<TabGroup>
 		<Tab title="Find" icon="images/Badge/search.png">
-			<Window title="Tab 1">
+			<Window title="Find">
 				<View id='mainView' class="main">
-					<Label>I am Window 1</Label>
 					<View id='header' class="headerView">
 						<View id="toolBar" class="toolbarView">
-							<Button id="btnCustomer" class="leftTBbtn" left=0 top=0 width = Ti.UI.SIZE height = Ti.UI.SIZE>Customer</Button>
+							<Button id="btnCustomer" class="leftTBbtn">Customer</Button>
 							<Button id="btnServiceOrderNo" class="middleTBbtn">Service Order #</Button>
 							<Button id="btnSerialNo" class="middleTBbtn">Serial Number</Button>
-							<Button id="btnOtherOpt" class="middleTBbtn">Other Option</Button>
+							<Button id="btnOtherOpt" class="rightTBbtn">Other Option</Button>
 						</View>
+					</View>
+					<View id='bodyView' class = 'findBodyView'>
+						<TextField id="edtCustomer" class="tfCustomer"></TextField>
+						<TextField id="edtCity" class="tfCity"></TextField>
+						<Button id="btnInstalledBase" class = "btnIB">Find Installed Base</Button>
 					</View>
 				</View>
 			</Window>

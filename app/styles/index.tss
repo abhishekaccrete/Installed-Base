@@ -23,7 +23,7 @@
 {
 	top: 5,
 	height: '5dp',
-	backgroundColor: 'white',
+	backgroundColor: 'transparent',
 	borderColor: 'black',
 	borderRadius: '5px'
 },
@@ -37,20 +37,66 @@
 },
 
 '.leftTBbtn': {
-	backgroundImage: 'images/Button/Button_NavBar_Left_Selected@1x.png',
+	left:0,
+	top:0,
+	borderColor: 'black',
+	backgroundImage: '/images/Button/Button_NavBar_Left_Selected1x.png',
 	height: Ti.UI.FILL,
-	font:{fontSize: 14}
+	font:{fontSize: 14},
+	color: 'white'
 	//backgroundSelectedImage: 'images/Button/Button_NavBar_Left_Selected@1x.png'
-}
+},
 
 '.middleTBbtn': {
-	backgroundImage: 'images/Button/Button_NavBar_Middle_Selected@1x.png',
+	borderColor: 'black',
+	backgroundImage: '/images/Button/Button_NavBar_Middle_Selected1x.png',
 	height: Ti.UI.FILL,
-	font:{fontSize: 14}
-}
+	font:{fontSize: 14},
+	color: 'white'
+},
 
 '.rightTBbtn': {
-	backgroundImage: 'images/Button/Button_NavBar_Right_Selected@1x.png',
+	borderColor: 'black',
+	backgroundImage: '/images/Button/Button_NavBar_Right_Selected1x.png',
 	height: Ti.UI.FILL,
-	font:{fontSize: 14}
+	font:{fontSize: 14},
+	color: 'white'
+},
+
+'.findBodyView':{
+	left:0,
+	backgroundImage:'/images/Background/Background_FindScreen1x.png',
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	borderColor: 'black',
+	borderRadius: '5px'
+},
+
+'.tfCustomer': 
+{
+	left:'20%',
+	top:'40%',
+	width:'60%',
+	height: Ti.UI.SIZE,
+	hintText:'Customer',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED
+}
+
+'.tfCity': 
+{
+	left:'20%',
+	top:'50%',
+	width:'60%',
+	height: Ti.UI.SIZE,
+	hintText:'Your City',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED
+}
+
+'.btnIB':
+{
+	left: '20%',
+	top: '70%',
+	width: '60%',
+	height: '5%',
+	backgroundImage: '/images/Button/Button_Done1x.png'
 }
