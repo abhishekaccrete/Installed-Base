@@ -1,15 +1,53 @@
 config = {
 	platformWidth: Ti.Platform.displayCaps.platformWidth,
 	platformHeight: Ti.Platform.displayCaps.platformHeight,
-	osname: Ti.Platform.osname
+	osname: Ti.Platform.osname,
+	imgPath: '/images/'
 };
 
-$.header.height = 0.06*config.platformHeight;
-$.bodyView.top = 0.06*config.platformHeight;
+$.header.height = '40dp'
+$.bodyView.top = '40dp'
 
 $.toolBar.left = 0.10*config.platformWidth;
 $.toolBar.width = 0.80*config.platformWidth;
-$.toolBar.height = 0.05*config.platformHeight;
+$.toolBar.height = '30dp'
+/*
+ * btnCustomer
+ * btnServiceOrderNo
+ * btnSerialNo
+ * btnOtherOpt
+ */
+
+if($.btnCustomer.clicked)
+{
+	if($.btnCustomer.backgroundImage == config.imgPath+'Button/Button_NavBar_Left@1x.png')
+	{
+		$.btnCustomer.backgroundImage = config.imgPath+'Button/Button_NavBar_Left@1x.png'
+	}
+	//$.btnCustomer.setBackgroundImage(config.imgPath+'')
+}
+
+$.btnCustomer.addEventListener('click',function(e)
+{
+	
+});
+
+$.btnServiceOrderNo.addEventListener('click',function(e)
+{
+	
+});
+
+$.btnSerialNo.addEventListener('click',function(e)
+{
+	
+});
+
+$.btnOtherOpt.addEventListener('click',function(e)
+{
+	
+});
+
+
 
 $.btnCustomer.width = 0.20*config.platformWidth;
 

@@ -8,7 +8,7 @@ function Controller() {
         id: "index"
     });
     $.__views.__alloyId2 = Ti.UI.createWindow({
-        backgroundColor: "#fff",
+        backgroundColor: "blue",
         title: "Find",
         id: "__alloyId2"
     });
@@ -26,13 +26,12 @@ function Controller() {
         width: Ti.UI.FILL,
         backgroundColor: "gray",
         borderColor: "black",
-        borderRadius: "5px",
+        borderRadius: "2px",
         id: "header"
     });
     $.__views.mainView.add($.__views.header);
     $.__views.toolBar = Ti.UI.createView({
         top: 5,
-        height: "5dp",
         backgroundColor: "transparent",
         borderColor: "black",
         borderRadius: "5px",
@@ -43,14 +42,15 @@ function Controller() {
         left: 0,
         top: 0,
         borderColor: "black",
-        backgroundImage: "/images/Button/Button_NavBar_Left_Selected1x.png",
+        backgroundImage: "/images/Button/Button_NavBar_Left@1x.png",
         height: Ti.UI.FILL,
         font: {
             fontSize: 14
         },
         color: "white",
         title: "Customer",
-        id: "btnCustomer"
+        id: "btnCustomer",
+        clicked: "true"
     });
     $.__views.toolBar.add($.__views.btnCustomer);
     $.__views.btnServiceOrderNo = Ti.UI.createButton({
@@ -62,7 +62,8 @@ function Controller() {
         },
         color: "white",
         title: "Service Order #",
-        id: "btnServiceOrderNo"
+        id: "btnServiceOrderNo",
+        clicked: "false"
     });
     $.__views.toolBar.add($.__views.btnServiceOrderNo);
     $.__views.btnSerialNo = Ti.UI.createButton({
@@ -74,7 +75,8 @@ function Controller() {
         },
         color: "white",
         title: "Serial Number",
-        id: "btnSerialNo"
+        id: "btnSerialNo",
+        clicked: "false"
     });
     $.__views.toolBar.add($.__views.btnSerialNo);
     $.__views.btnOtherOpt = Ti.UI.createButton({
@@ -86,7 +88,8 @@ function Controller() {
         },
         color: "white",
         title: "Other Option",
-        id: "btnOtherOpt"
+        id: "btnOtherOpt",
+        clicked: "false"
     });
     $.__views.toolBar.add($.__views.btnOtherOpt);
     $.__views.bodyView = Ti.UI.createView({
@@ -95,14 +98,14 @@ function Controller() {
         width: Ti.UI.FILL,
         height: Ti.UI.FILL,
         borderColor: "black",
-        borderRadius: "5px",
+        borderRadius: "2px",
         id: "bodyView"
     });
     $.__views.mainView.add($.__views.bodyView);
     $.__views.edtCustomer = Ti.UI.createTextField({
-        left: "20%",
-        top: "40%",
-        width: "60%",
+        left: "400dp",
+        top: "200dp",
+        width: "200dp",
         height: Ti.UI.SIZE,
         hintText: "Customer",
         borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
@@ -110,9 +113,9 @@ function Controller() {
     });
     $.__views.bodyView.add($.__views.edtCustomer);
     $.__views.edtCity = Ti.UI.createTextField({
-        left: "20%",
-        top: "50%",
-        width: "60%",
+        left: "400dp",
+        top: "250dp",
+        width: "200dp",
         height: Ti.UI.SIZE,
         hintText: "Your City",
         borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
@@ -120,10 +123,10 @@ function Controller() {
     });
     $.__views.bodyView.add($.__views.edtCity);
     $.__views.btnInstalledBase = Ti.UI.createButton({
-        left: "20%",
-        top: "70%",
-        width: "60%",
-        height: "5%",
+        left: "400dp",
+        top: "300dp",
+        width: "200dp",
+        height: "30dp",
         backgroundImage: "/images/Button/Button_Done1x.png",
         title: "Find Installed Base",
         id: "btnInstalledBase"
@@ -137,7 +140,7 @@ function Controller() {
     });
     $.__views.index.addTab($.__views.__alloyId1);
     $.__views.__alloyId4 = Ti.UI.createWindow({
-        backgroundColor: "#fff",
+        backgroundColor: "blue",
         title: "Tab 2",
         id: "__alloyId4"
     });
@@ -162,7 +165,7 @@ function Controller() {
     });
     $.__views.index.addTab($.__views.__alloyId3);
     $.__views.__alloyId7 = Ti.UI.createWindow({
-        backgroundColor: "#fff",
+        backgroundColor: "blue",
         title: "Tab 3",
         id: "__alloyId7"
     });
@@ -187,7 +190,7 @@ function Controller() {
     });
     $.__views.index.addTab($.__views.__alloyId6);
     $.__views.__alloyId10 = Ti.UI.createWindow({
-        backgroundColor: "#fff",
+        backgroundColor: "blue",
         title: "Tab 4",
         id: "__alloyId10"
     });
@@ -217,13 +220,19 @@ function Controller() {
     config = {
         platformWidth: Ti.Platform.displayCaps.platformWidth,
         platformHeight: Ti.Platform.displayCaps.platformHeight,
-        osname: "android"
+        osname: Ti.Platform.osname,
+        imgPath: "/images"
     };
-    $.header.height = .06 * config.platformHeight;
-    $.bodyView.top = .06 * config.platformHeight;
+    $.header.height = "40dp";
+    $.bodyView.top = "40dp";
     $.toolBar.left = .1 * config.platformWidth;
     $.toolBar.width = .8 * config.platformWidth;
-    $.toolBar.height = .05 * config.platformHeight;
+    $.toolBar.height = "30dp";
+    $.btnCustomer.clicked;
+    $.btnCustomer.addEventListener("click", function() {});
+    $.btnServiceOrderNo.addEventListener("click", function() {});
+    $.btnSerialNo.addEventListener("click", function() {});
+    $.btnOtherOpt.addEventListener("click", function() {});
     $.btnCustomer.width = .2 * config.platformWidth;
     $.btnServiceOrderNo.left = .2 * config.platformWidth;
     $.btnServiceOrderNo.width = .2 * config.platformWidth;
