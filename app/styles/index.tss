@@ -1,6 +1,7 @@
 "Window": 
 {
-	backgroundColor: "blue"
+	backgroundColor: "blue",
+	navBarHidden: true
 },
 
 "Label": {
@@ -18,6 +19,7 @@
 	left: 0,
 	top: 0,
 	width: Ti.UI.FILL,
+	backgroundImage: '/images/Background/Background_Main@1x.png',
 	backgroundColor: 'gray',
 	borderColor: 'black',
 	borderRadius: '2px'
@@ -43,7 +45,7 @@
 	left:0,
 	top:0,
 	borderColor: 'black',
-	backgroundImage: '/images/Button/Button_NavBar_Left@1x.png',
+	backgroundImage: '/images/Button/Button_NavBar_Left_Selected1x.png',
 	height: Ti.UI.FILL,
 	font:{fontSize: 14},
 	color: 'white'
@@ -52,7 +54,7 @@
 
 '.middleTBbtn': {
 	borderColor: 'black',
-	backgroundImage: '/images/Button/Button_NavBar_Middle_Selected1x.png',
+	backgroundImage: '/images/Button/Button_NavBar_Middle1x.png',
 	height: Ti.UI.FILL,
 	font:{fontSize: 14},
 	color: 'white'
@@ -60,7 +62,7 @@
 
 '.rightTBbtn': {
 	borderColor: 'black',
-	backgroundImage: '/images/Button/Button_NavBar_Right_Selected1x.png',
+	backgroundImage: '/images/Button/Button_NavBar_Right1x.png',
 	height: Ti.UI.FILL,
 	font:{fontSize: 14},
 	color: 'white'

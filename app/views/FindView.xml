@@ -1,0 +1,17 @@
+<Alloy>
+	<View id='mainView' class="main">
+		<View id='header' class="headerView">
+			<View id="toolBar" class="toolbarView">
+				<Button id="btnCustomer" class="leftTBbtn" clicked = true>Customer</Button>
+				<Button id="btnServiceOrderNo" class="middleTBbtn" clicked = false>Service Order #</Button>
+				<Button id="btnSerialNo" class="middleTBbtn" clicked = false>Serial Number</Button>
+				<Button id="btnOtherOpt" class="rightTBbtn" clicked = false>Other Option</Button>
+			</View>
+		</View>
+		<View id='bodyView' class = 'findBodyView'>
+			<TextField id="edtCustomer" class="tfCustomer"></TextField>
+			<TextField id="edtCity" class="tfCity"></TextField>
+			<Button id="btnInstalledBase" class = "btnIB">Find Installed Base</Button>
+		</View>
+	</View>
+</Alloy>

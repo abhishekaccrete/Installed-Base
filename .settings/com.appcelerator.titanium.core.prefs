@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+provisioning_profiles/development/48AC3312-2D99-4FF8-966A-37503EB25038/appid=com.accretesol.testapp
+provisioning_profiles/development/48AC3312-2D99-4FF8-966A-37503EB25038/name=testappdevpro
+provisioning_profiles/development/48AC3312-2D99-4FF8-966A-37503EB25038/uuid=48AC3312-2D99-4FF8-966A-37503EB25038
+provisioning_profiles/development/B1215815-505F-452D-8F66-B7F664F4CCC9/appid=com.accretesol.installbase
+provisioning_profiles/development/B1215815-505F-452D-8F66-B7F664F4CCC9/name=installbasedevpro
+provisioning_profiles/development/B1215815-505F-452D-8F66-B7F664F4CCC9/uuid=B1215815-505F-452D-8F66-B7F664F4CCC9
