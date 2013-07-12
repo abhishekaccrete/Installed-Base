@@ -9,3 +9,9 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+config = {
+	platformWidth: Ti.Platform.displayCaps.platformWidth,
+	platformHeight: Ti.Platform.displayCaps.platformHeight,
+	osname: Ti.Platform.osname,
+	imgPath: '/images/'
+};

@@ -1,10 +1,5 @@
-config = {
-	platformWidth: Ti.Platform.displayCaps.platformWidth,
-	platformHeight: Ti.Platform.displayCaps.platformHeight,
-	osname: Ti.Platform.osname,
-	imgPath: '/images/'
-};
-
+$.header.height = '40dp'
+$.bodyView.top = '40dp'
 
 
 $.btnCustomer.addEventListener('click',function(e)
@@ -58,5 +53,11 @@ $.btnSerialNo.left = 0.40*config.platformWidth;
 $.btnSerialNo.width = 0.20*config.platformWidth;
 $.btnOtherOpt.left = 0.60*config.platformWidth;
 $.btnOtherOpt.width = 0.20*config.platformWidth;
+
+
+$.toolBar.left = 0.10*config.platformWidth;
+$.toolBar.width = 0.80*config.platformWidth;
+$.toolBar.height = '30dp'
+
 
 $.index.open();
